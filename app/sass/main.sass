@@ -1,0 +1,244 @@
+// Global Styles
+$regular: 'ProximanovaRegular', sans-serif
+$bold: 'ProximaNovaBold', sans-serif
+$xbold: 'ProximaNovaExtrabold', sans-serif
+$black: 'ProximaNovaBlack', sans-serif
+
+body 
+	position: relative
+	font-family: $regular
+
+h1, h2, h3, header nav nav, button
+	text-transform: uppercase
+	font-family: $bold
+
+h1
+	font-size: 50px
+	font-family: $xbold
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3)
+
+h2
+	font-size: 30px
+
+h3
+	font-size: 25px
+
+button, a
+	transition: 0.2s all ease
+	outline: none
+
+button
+	color: #fff
+	border-radius: 2px
+	&.orange
+		background-image: linear-gradient(170deg, rgba(243,182,141,1) 0%, rgba(229,98,11,1) 45%, rgba(229,98,11,1) 100%)
+		font-size: 20px
+		padding: 30px 40px
+		border-bottom: 2px solid #b44a04
+		box-shadow: 3px 3px 10px 2px rgba(107, 43, 0, 0.65)
+	&.blue
+		background-color: #80b9e7
+
+// Global Styles End
+// Header Styles
+.navbar
+	background-color: #fff
+	min-height: 92px
+	padding-top: 17px
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35)
+.call
+	display: inline-block
+	font-size: 22px
+	float: right
+	span
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		&:before
+			content: url(../img/icons/phone.png)
+			position: absolute
+			left: -25px
+			top: 5px
+	small
+		font-size: 16px
+	button
+		font-size: 13px
+		vertical-align: middle
+		padding: 10px 22px
+		margin: 0 10px
+
+.navbar-left 
+	margin: 0 70px
+.nav
+	li
+		position: relative
+		padding: 0 7px
+		a
+			color: #242424
+			&:hover, &:focus
+				color: #80b9e7
+				background-color: transparent
+	li:not(:last-child):after
+		content: ''
+		width: 4px
+		height: 4px
+		background-color: #80b9e7
+		display: block
+		position: absolute
+		bottom: 24px
+		right: -2px
+		border-radius: 2px
+.navbar-header 
+	display: inline-block
+.navbar-toggle 
+	background-color: #80b9e7
+	margin-top: 13px
+	span
+		background-color: #fff
+.navbar-brand
+	font-family: $bold
+	text-transform: uppercase
+	font-size: 21px
+	line-height: 16px
+	float: left
+	span
+		color: #72b1e4
+	small
+		font-family: $regular
+		color: #6b6b6b
+		text-transform: none
+		font-size: 13px
+		letter-spacing: 1.3px
+
+// Header Styles End
+
+// Main Section Styles
+main
+	min-height: 607px
+	position: relative
+	margin-top: 92px
+	background-color: transparent
+	padding: 65px 0 100px 0
+.main-content
+	color: #fff
+	float: right
+	ul 
+		list-style-type: none
+		font-size: 22px
+		padding: 0
+		li
+			margin-bottom: 15px
+			span
+				width: 26px
+				height: 24px
+				display: inline-block
+				background-image: url(../img/icons/main.png)
+				vertical-align: middle
+				margin-bottom: 3px
+				margin-right: 10px
+			&:nth-child(2) span
+				background-position: -38px 0px
+			&:last-child span
+				background-position: -76px 0px
+			.cost
+				background-image: none
+				display: inline-block
+				width: auto
+				height: auto
+				font-size: 30px
+				font-family: $bold
+				border: 3px solid #e5620b
+				border-radius: 5px
+				padding: 0 10px
+				margin-left: 15px
+.carousel
+	z-index: -2
+	position: absolute
+	width: 100%	
+	height: 100%
+	top: 0
+	&-inner
+		height: 100%
+	.item
+		height: 100%
+
+.main-overlay
+	background-image: url(../img/overlay.png)
+	background-size: cover
+	background-position: top right
+	height: 100%
+	width: 100%
+	position: absolute
+	top: 0
+	z-index: -1
+// Main Section Styles End
+
+// Work Section Styles
+.work
+	min-height: 724px
+	background-image: url(../img/backgrounds/work-bg.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center bottom
+	position: relative
+	text-align: center
+	padding-top: 35px
+	box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.15)
+	h2
+		position: relative
+		text-align: center
+		display: inline-block
+		span
+			font-family: $xbold
+		&:after
+			content: ''
+			display: block
+			width: 122px
+			height: 4px
+			background-color: #e87123
+			border-radius: 2px
+			margin: auto
+			margin-top: 10px
+	h3
+		text-transform: none
+	&-content
+		margin-top: 35px
+	&-item
+		display: inline-block
+		width: 190px
+		vertical-align: top
+		margin: 5px 8px
+		span
+			display: inline-block
+			width: 82px
+			height: 60px
+			background-image: url(../img/icons/work.png)
+		&:first-child span
+			background-position: -8px 0
+		&:nth-child(2) span
+			background-position: -110px 0
+		&:nth-child(3) span
+			background-position: -230px 0
+		&:nth-child(4) span
+			background-position: -314px 0
+		&:nth-child(5) span
+			background-position: -400px 0
+	&-buttons
+		position: absolute
+		bottom: 150px
+		left: 0
+		right: 0
+		button
+			padding:
+				bottom: 20px
+				top: 20px
+			border-bottom: 4px solid #5e9ed2
+			box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2)
+			width: 227px
+			margin: 0 25px
+// Work Section Styles End
+
+
+
+// Allways end
+@import "_media.sass"

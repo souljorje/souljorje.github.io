@@ -1,0 +1,343 @@
+body {
+  position: relative;
+  font-family: "ProximanovaRegular", sans-serif; }
+
+h1, h2, h3, header nav nav, button {
+  text-transform: uppercase;
+  font-family: "ProximaNovaBold", sans-serif; }
+
+h1 {
+  font-size: 50px;
+  font-family: "ProximaNovaExtrabold", sans-serif;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 25px; }
+
+button, a {
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+  outline: none; }
+
+button {
+  color: #fff;
+  border-radius: 2px; }
+  button.orange {
+    background-image: linear-gradient(170deg, #f3b68d 0%, #e5620b 45%, #e5620b 100%);
+    font-size: 20px;
+    padding: 30px 40px;
+    border-bottom: 2px solid #b44a04;
+    -webkit-box-shadow: 3px 3px 10px 2px rgba(107, 43, 0, 0.65);
+            box-shadow: 3px 3px 10px 2px rgba(107, 43, 0, 0.65); }
+  button.blue {
+    background-color: #80b9e7; }
+
+.navbar {
+  background-color: #fff;
+  min-height: 92px;
+  padding-top: 17px;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35); }
+
+.call {
+  display: inline-block;
+  font-size: 22px;
+  float: right; }
+  .call span {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative; }
+    .call span:before {
+      content: url(../img/icons/phone.png);
+      position: absolute;
+      left: -25px;
+      top: 5px; }
+  .call small {
+    font-size: 16px; }
+  .call button {
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 10px 22px;
+    margin: 0 10px; }
+
+.navbar-left {
+  margin: 0 70px; }
+
+.nav li {
+  position: relative;
+  padding: 0 7px; }
+  .nav li a {
+    color: #242424; }
+    .nav li a:hover, .nav li a:focus {
+      color: #80b9e7;
+      background-color: transparent; }
+
+.nav li:not(:last-child):after {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background-color: #80b9e7;
+  display: block;
+  position: absolute;
+  bottom: 24px;
+  right: -2px;
+  border-radius: 2px; }
+
+.navbar-header {
+  display: inline-block; }
+
+.navbar-toggle {
+  background-color: #80b9e7;
+  margin-top: 13px; }
+  .navbar-toggle span {
+    background-color: #fff; }
+
+.navbar-brand {
+  font-family: "ProximaNovaBold", sans-serif;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 16px;
+  float: left; }
+  .navbar-brand span {
+    color: #72b1e4; }
+  .navbar-brand small {
+    font-family: "ProximanovaRegular", sans-serif;
+    color: #6b6b6b;
+    text-transform: none;
+    font-size: 13px;
+    letter-spacing: 1.3px; }
+
+main {
+  min-height: 607px;
+  position: relative;
+  margin-top: 92px;
+  background-color: transparent;
+  padding: 65px 0 100px 0; }
+
+.main-content {
+  color: #fff;
+  float: right; }
+  .main-content ul {
+    list-style-type: none;
+    font-size: 22px;
+    padding: 0; }
+    .main-content ul li {
+      margin-bottom: 15px; }
+      .main-content ul li span {
+        width: 26px;
+        height: 24px;
+        display: inline-block;
+        background-image: url(../img/icons/main.png);
+        vertical-align: middle;
+        margin-bottom: 3px;
+        margin-right: 10px; }
+      .main-content ul li:nth-child(2) span {
+        background-position: -38px 0px; }
+      .main-content ul li:last-child span {
+        background-position: -76px 0px; }
+      .main-content ul li .cost {
+        background-image: none;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        font-size: 30px;
+        font-family: "ProximaNovaBold", sans-serif;
+        border: 3px solid #e5620b;
+        border-radius: 5px;
+        padding: 0 10px;
+        margin-left: 15px; }
+
+.carousel {
+  z-index: -2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; }
+  .carousel-inner {
+    height: 100%; }
+  .carousel .item {
+    height: 100%; }
+
+.main-overlay {
+  background-image: url(../img/overlay.png);
+  background-size: cover;
+  background-position: top right;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1; }
+
+.work {
+  min-height: 724px;
+  background-image: url(../img/backgrounds/work-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+  text-align: center;
+  padding-top: 35px;
+  -webkit-box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.15); }
+  .work h2 {
+    position: relative;
+    text-align: center;
+    display: inline-block; }
+    .work h2 span {
+      font-family: "ProximaNovaExtrabold", sans-serif; }
+    .work h2:after {
+      content: '';
+      display: block;
+      width: 122px;
+      height: 4px;
+      background-color: #e87123;
+      border-radius: 2px;
+      margin: auto;
+      margin-top: 10px; }
+  .work h3 {
+    text-transform: none; }
+  .work-content {
+    margin-top: 35px; }
+  .work-item {
+    display: inline-block;
+    width: 190px;
+    vertical-align: top;
+    margin: 5px 8px; }
+    .work-item span {
+      display: inline-block;
+      width: 82px;
+      height: 60px;
+      background-image: url(../img/icons/work.png); }
+    .work-item:first-child span {
+      background-position: -8px 0; }
+    .work-item:nth-child(2) span {
+      background-position: -110px 0; }
+    .work-item:nth-child(3) span {
+      background-position: -230px 0; }
+    .work-item:nth-child(4) span {
+      background-position: -314px 0; }
+    .work-item:nth-child(5) span {
+      background-position: -400px 0; }
+  .work-buttons {
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    right: 0; }
+    .work-buttons button {
+      padding-bottom: 20px;
+      padding-top: 20px;
+      border-bottom: 4px solid #5e9ed2;
+      -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+              box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+      width: 227px;
+      margin: 0 25px; }
+
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .navbar-left {
+    margin: 0 0 0 -15px; }
+  .work {
+    min-height: 824px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .navbar-toggle {
+    display: block; }
+  .navbar-header {
+    float: none; }
+  .navbar-collapse.collapse {
+    display: none !important; }
+  .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px; }
+  .nav > li {
+    float: none; }
+  .nav li:not(:last-child):after {
+    content: none; }
+  .navbar-nav > li > a {
+    padding: 10px; }
+  .navbar-collapse {
+    background-color: #fff;
+    padding: 0 15px !important;
+    margin: 15px 0 0 0; }
+  .navbar-left {
+    float: none !important; }
+  .navbar-collapse.collapse.in {
+    display: block !important; }
+  .carousel .item img {
+    height: 100%;
+    width: 100%; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767.5px) {
+  .call button {
+    display: none; }
+  main {
+    background-image: url(../img/overlay.png), url(../img/1-2.jpg);
+    background-size: cover;
+    background-position: top center; }
+  .carousel, .main-overlay {
+    display: none; }
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important; } }
+
+@media only screen and (max-width: 654.5px) {
+  .work {
+    min-height: 1050px; }
+    .work button {
+      margin: 5px 9px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 493.5px) {
+  .navbar {
+    text-align: center; }
+  .call {
+    float: none; }
+  .work {
+    min-height: 1150px; }
+    .work-item {
+      width: 161px;
+      margin: 5px 0px; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 355.5px) {
+  .work {
+    min-height: 1480px; }
+    .work-item {
+      width: 240px; }
+    .work-buttons {
+      bottom: 170px; } }
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }

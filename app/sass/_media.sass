@@ -1,0 +1,135 @@
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.navbar-left 
+		margin: 0 0 0 -15px
+	
+	.work
+		min-height: 824px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.navbar-toggle 
+		display: block
+	
+	.navbar-header 
+		float: none
+	
+	.navbar-collapse.collapse 
+		display: none!important
+	
+	.navbar-nav 
+		float: none!important
+		margin: 7.5px -15px
+	
+	.nav > li 
+		float: none
+	.nav li:not(:last-child):after
+		content: none
+
+	.navbar-nav > li > a
+		padding: 10px
+	
+	.navbar-collapse 
+		background-color: #fff
+		padding: 0 15px!important
+		margin: 15px 0 0 0
+	
+	.navbar-left 
+		float: none!important
+	
+	.navbar-collapse.collapse.in
+		display:block !important
+	
+	.carousel .item img
+		height: 100%
+		width: 100%
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767.5px)
+	.call button
+		display: none
+	main
+		background-image: url(../img/overlay.png), url(../img/1-2.jpg)
+		background-size: cover
+		background-position: top center
+	.carousel, .main-overlay
+		display: none
+
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+@media only screen and (max-width : 654.5px)
+		.work
+			min-height: 1050px
+			button
+				margin: 5px 9px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 493.5px)
+	.navbar
+		text-align: center
+	.call
+		float: none
+	.work
+		min-height: 1150px
+		&-item
+			width: 161px
+			margin: 5px 0px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 355.5px)
+	.work
+		min-height: 1480px
+		&-item
+			width: 240px
+		&-buttons
+			bottom: 170px
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
