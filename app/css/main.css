@@ -32,11 +32,11 @@ button {
     border-bottom: 2px solid #b44a04;
     -webkit-box-shadow: 3px 3px 10px 2px rgba(107, 43, 0, 0.65);
             box-shadow: 3px 3px 10px 2px rgba(107, 43, 0, 0.65); }
+    button.orange:hover {
+      background-image: linear-gradient(170deg, #f3b68d 0%, #e5620b 100%); }
     button.orange:active {
       font-size: 19px;
-      background-image: linear-gradient(170deg, #f3b68d 0%, #e5620b 100%);
-      -webkit-box-shadow: 1px 1px 10px rgba(107, 43, 0, 0.65);
-              box-shadow: 1px 1px 10px rgba(107, 43, 0, 0.65); }
+        font-size-box-shadow: 1px 1px 10px rgba(107, 43, 0, 0.65); }
   button.blue {
     background-color: #80b9e7;
     border-bottom: 4px solid #5e9ed2;
@@ -46,8 +46,8 @@ button {
     vertical-align: middle; }
     button.blue:active {
       font-size: 15px;
-      -webkit-box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.3), 1px 1px 5px rgba(0, 0, 0, 0.2);
-              box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.3), 1px 1px 5px rgba(0, 0, 0, 0.2); }
+      -webkit-box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(0, 0, 0, 0.2);
+              box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(0, 0, 0, 0.2); }
 
 .navbar {
   background-color: #fff;
