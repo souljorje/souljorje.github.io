@@ -25,7 +25,7 @@ h3
 
 button, a
 	transition: 0.2s all ease
-	outline: none
+	outline: none!important
 
 button
 	color: #fff
@@ -36,8 +36,19 @@ button
 		padding: 30px 40px
 		border-bottom: 2px solid #b44a04
 		box-shadow: 3px 3px 10px 2px rgba(107, 43, 0, 0.65)
+		&:active
+			  font-size: 19px
+  			background-image: linear-gradient(170deg, rgba(243,182,141,1) 0%,  rgba(229,98,11,1) 100%)
+  			box-shadow: 1px 1px 10px  rgba(107, 43, 0, 0.65)
 	&.blue
 		background-color: #80b9e7
+		border-bottom: 4px solid #5e9ed2
+		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), 
+		font-size: 16px
+		vertical-align: middle
+		&:active
+			  font-size: 15px
+			  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(0, 0, 0, 0.2)
 
 // Global Styles End
 // Header Styles
@@ -66,6 +77,9 @@ button
 		vertical-align: middle
 		padding: 10px 22px
 		margin: 0 10px
+		background-color: #80b9e7
+		&:hover
+			background-color: #51a4e8
 
 .navbar-left 
 	margin: 0 70px
@@ -151,6 +165,9 @@ main
 				border-radius: 5px
 				padding: 0 10px
 				margin-left: 15px
+	button
+		width: 342px
+		height: 89px
 .carousel
 	z-index: -2
 	position: absolute
@@ -201,13 +218,15 @@ main
 			margin-top: 10px
 	h3
 		text-transform: none
+	p
+		font-size: 16px
 	&-content
 		margin-top: 35px
 	&-item
 		display: inline-block
-		width: 190px
+		width: 200px
 		vertical-align: top
-		margin: 5px 8px
+		margin: 5px 12px
 		span
 			display: inline-block
 			width: 82px
@@ -225,20 +244,91 @@ main
 			background-position: -400px 0
 	&-buttons
 		position: absolute
-		bottom: 150px
+		bottom: 225px
 		left: 0
 		right: 0
 		button
-			padding:
-				bottom: 20px
-				top: 20px
+			padding: 20px 5px
 			border-bottom: 4px solid #5e9ed2
 			box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2)
-			width: 227px
+			width: 245px
+			height: 63px
 			margin: 0 25px
+			font-size: 16px
 // Work Section Styles End
 
+// Benefits Section Styles
 
+.benefits
+	min-height: 800px
+	background-image: url(../img/backgrounds/ben-bg.png)
+	background-size: cover
+	background-position: center bottom
+	margin-top: -140px
+	padding-top: 100px
+	text-align: center
+	.container > p
+		max-width: 600px
+		margin: auto
+		font-size: 18px
+		margin-top: 30px
+	&-content
+		padding-left: 80px
+		margin-top: 20px
+	&-item
+		display: inline-block
+		width: 44%
+		text-align: left
+		font-family: $bold
+		margin-top: 25px
+		font-size: 16px
+		figure
+			display: table
+		figcaption
+			display: table-cell
+			vertical-align: middle
+		span
+			background-image: url(../img/icons/ben.png)
+			display: inline-block
+			width: 74px
+			height: 72px
+			margin-right: 20px
+		$a: 2
+		$b: 92
+		@while $a <= 6
+			&:nth-child(#{$a}) span
+				background-position: (0px-$b) 0
+			$b: $b+92+1
+			$a: $a+1
+	&-footer
+		margin-top: 30px
+		button
+			width: 228px
+			height: 66px
+			padding: 10px 40px
+			text-transform: none
+			line-height: 23px
+			display: inline-block
+			vertical-align: middle
+			margin: 0 70px
+			&:active
+			  font-size: 19px
+  			background-image: linear-gradient(170deg, rgba(243,182,141,1) 0%,  rgba(229,98,11,1) 100%)
+  			box-shadow: 1px 1px 10px  rgba(107, 43, 0, 0.65)
+		p
+			text-align: left
+			font-size: 20px
+			font-family: $bold
+			display: inline-block
+			vertical-align: middle
+			max-width: 600px
+			margin: 0
+
+
+		
+
+
+// Benefits Section Styles End
 
 // Allways end
 @import "_media.sass"

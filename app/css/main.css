@@ -20,7 +20,7 @@ h3 {
 button, a {
   -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
-  outline: none; }
+  outline: none !important; }
 
 button {
   color: #fff;
@@ -32,8 +32,22 @@ button {
     border-bottom: 2px solid #b44a04;
     -webkit-box-shadow: 3px 3px 10px 2px rgba(107, 43, 0, 0.65);
             box-shadow: 3px 3px 10px 2px rgba(107, 43, 0, 0.65); }
+    button.orange:active {
+      font-size: 19px;
+      background-image: linear-gradient(170deg, #f3b68d 0%, #e5620b 100%);
+      -webkit-box-shadow: 1px 1px 10px rgba(107, 43, 0, 0.65);
+              box-shadow: 1px 1px 10px rgba(107, 43, 0, 0.65); }
   button.blue {
-    background-color: #80b9e7; }
+    background-color: #80b9e7;
+    border-bottom: 4px solid #5e9ed2;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    vertical-align: middle; }
+    button.blue:active {
+      font-size: 15px;
+      -webkit-box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.3), 1px 1px 5px rgba(0, 0, 0, 0.2);
+              box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.3), 1px 1px 5px rgba(0, 0, 0, 0.2); }
 
 .navbar {
   background-color: #fff;
@@ -61,7 +75,10 @@ button {
     font-size: 13px;
     vertical-align: middle;
     padding: 10px 22px;
-    margin: 0 10px; }
+    margin: 0 10px;
+    background-color: #80b9e7; }
+    .call button:hover {
+      background-color: #51a4e8; }
 
 .navbar-left {
   margin: 0 70px; }
@@ -149,6 +166,9 @@ main {
         border-radius: 5px;
         padding: 0 10px;
         margin-left: 15px; }
+  .main-content button {
+    width: 342px;
+    height: 89px; }
 
 .carousel {
   z-index: -2;
@@ -199,13 +219,15 @@ main {
       margin-top: 10px; }
   .work h3 {
     text-transform: none; }
+  .work p {
+    font-size: 16px; }
   .work-content {
     margin-top: 35px; }
   .work-item {
     display: inline-block;
-    width: 190px;
+    width: 200px;
     vertical-align: top;
-    margin: 5px 8px; }
+    margin: 5px 12px; }
     .work-item span {
       display: inline-block;
       width: 82px;
@@ -223,17 +245,87 @@ main {
       background-position: -400px 0; }
   .work-buttons {
     position: absolute;
-    bottom: 150px;
+    bottom: 225px;
     left: 0;
     right: 0; }
     .work-buttons button {
-      padding-bottom: 20px;
-      padding-top: 20px;
+      padding: 20px 5px;
       border-bottom: 4px solid #5e9ed2;
       -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
               box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-      width: 227px;
-      margin: 0 25px; }
+      width: 245px;
+      height: 63px;
+      margin: 0 25px;
+      font-size: 16px; }
+
+.benefits {
+  min-height: 800px;
+  background-image: url(../img/backgrounds/ben-bg.png);
+  background-size: cover;
+  background-position: center bottom;
+  margin-top: -140px;
+  padding-top: 100px;
+  text-align: center; }
+  .benefits .container > p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 30px; }
+  .benefits-content {
+    padding-left: 80px;
+    margin-top: 20px; }
+  .benefits-item {
+    display: inline-block;
+    width: 44%;
+    text-align: left;
+    font-family: "ProximaNovaBold", sans-serif;
+    margin-top: 25px;
+    font-size: 16px; }
+    .benefits-item figure {
+      display: table; }
+    .benefits-item figcaption {
+      display: table-cell;
+      vertical-align: middle; }
+    .benefits-item span {
+      background-image: url(../img/icons/ben.png);
+      display: inline-block;
+      width: 74px;
+      height: 72px;
+      margin-right: 20px; }
+    .benefits-item:nth-child(2) span {
+      background-position: -92px 0; }
+    .benefits-item:nth-child(3) span {
+      background-position: -185px 0; }
+    .benefits-item:nth-child(4) span {
+      background-position: -278px 0; }
+    .benefits-item:nth-child(5) span {
+      background-position: -371px 0; }
+    .benefits-item:nth-child(6) span {
+      background-position: -464px 0; }
+  .benefits-footer {
+    margin-top: 30px; }
+    .benefits-footer button {
+      width: 228px;
+      height: 66px;
+      padding: 10px 40px;
+      text-transform: none;
+      line-height: 23px;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 70px; }
+      .benefits-footer button:active {
+        font-size: 19px;
+        background-image: linear-gradient(170deg, #f3b68d 0%, #e5620b 100%);
+        -webkit-box-shadow: 1px 1px 10px rgba(107, 43, 0, 0.65);
+                box-shadow: 1px 1px 10px rgba(107, 43, 0, 0.65); }
+    .benefits-footer p {
+      text-align: left;
+      font-size: 20px;
+      font-family: "ProximaNovaBold", sans-serif;
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 600px;
+      margin: 0; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -241,7 +333,15 @@ main {
   .navbar-left {
     margin: 0 0 0 -15px; }
   .work {
-    min-height: 824px; } }
+    min-height: 824px; }
+    .work-item {
+      width: 190px; }
+    .work-buttons {
+      bottom: 150px; }
+    .work p {
+      font-size: 14px; }
+  .benefits-item {
+    width: 45%; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -282,6 +382,14 @@ main {
     background-position: top center; }
   .carousel, .main-overlay {
     display: none; }
+  .benefits-content {
+    padding: 0; }
+  .benefits-item {
+    width: 45%;
+    text-align: center;
+    vertical-align: top; }
+    .benefits-item figure, .benefits-item figcaption {
+      display: block; }
   /*Disable Animation on Mobile Devices*/
   .animated {
     /*CSS transitions*/
@@ -296,9 +404,12 @@ main {
 
 @media only screen and (max-width: 654.5px) {
   .work {
-    min-height: 1050px; }
-    .work button {
-      margin: 5px 9px; } }
+    min-height: 1100px; }
+    .work-buttons {
+      bottom: 200px; }
+      .work-buttons button {
+        margin: 5px 9px;
+        width: 227px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 493.5px) {
@@ -307,19 +418,21 @@ main {
   .call {
     float: none; }
   .work {
-    min-height: 1150px; }
+    min-height: 1230px; }
     .work-item {
       width: 161px;
-      margin: 5px 0px; } }
+      margin: 5px 0px; }
+  .benefits-item {
+    width: 100%; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 355.5px) {
   .work {
-    min-height: 1480px; }
+    min-height: 1580px; }
     .work-item {
       width: 240px; }
     .work-buttons {
-      bottom: 170px; } }
+      bottom: 270px; } }
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */

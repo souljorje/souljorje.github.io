@@ -8,6 +8,16 @@
 	
 	.work
 		min-height: 824px
+		&-item
+			width: 190px
+		&-buttons
+			bottom: 150px
+		p
+			font-size: 14px
+
+	.benefits-item
+		width: 45%
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -56,6 +66,15 @@
 		background-position: top center
 	.carousel, .main-overlay
 		display: none
+	
+	.benefits-content
+		padding: 0
+	.benefits-item
+		width: 45%
+		text-align: center
+		vertical-align: top
+		figure, figcaption
+			display: block
 
 	/*Disable Animation on Mobile Devices*/
 	.animated
@@ -80,9 +99,12 @@
 
 @media only screen and (max-width : 654.5px)
 		.work
-			min-height: 1050px
-			button
-				margin: 5px 9px
+			min-height: 1100px
+			&-buttons
+				bottom: 200px
+				button
+					margin: 5px 9px
+					width: 227px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 493.5px)
@@ -91,20 +113,23 @@
 	.call
 		float: none
 	.work
-		min-height: 1150px
+		min-height: 1230px
 		&-item
 			width: 161px
 			margin: 5px 0px
+
+	.benefits-item
+		width: 100%
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 355.5px)
 	.work
-		min-height: 1480px
+		min-height: 1580px
 		&-item
 			width: 240px
 		&-buttons
-			bottom: 170px
+			bottom: 270px
 
 
 /*==========  Mobile First Method  ==========*/
