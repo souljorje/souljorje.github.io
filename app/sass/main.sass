@@ -45,7 +45,7 @@ button
 	&.blue
 		background-color: #80b9e7
 		border-bottom: 4px solid #5e9ed2
-		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2) 
+		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2)
 		font-size: 16px
 		vertical-align: middle
 		padding: 20px 5px
@@ -270,8 +270,8 @@ main
 	background-image: url(../img/backgrounds/ben-bg.png)
 	background-size: cover
 	background-position: center bottom
-	margin-top: -140px
-	padding-top: 100px
+	margin-top: -170px
+	padding-top: 130px
 	text-align: center
 	.container > p
 		max-width: 600px
@@ -442,6 +442,66 @@ main
 	background-image: url(../img/backgrounds/feedback-bg.png)
 	background-size: cover
 	background-position: center top
+	text-align: center
+	h2:after
+			content: ''
+			height: 4px
+			width: 132px
+			display: block
+			background-color: #b2dcfd
+			border-radius: 2px
+			margin: auto
+			margin-top: 20px
+	&-slider
+		margin-top: 60px
+	&-slider-item
+		background-color: #fff
+		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2)
+		text-align: left
+		padding: 20px
+		border-radius: 4px
+		margin: 0 40px
+		outline: none
+		&-content
+			display: table
+		&-text
+			display: table-cell
+			vertical-align: top
+		h4
+			font-size: 18px
+			font-family: $bold
+			margin: 0
+			&:after
+				content: ''
+				width: 100%
+				height: 1px
+				background-color: #ebf1f6
+				display: block
+				margin-top: 10px
+			span
+				font-size: 15px
+				color: #7cb7e6
+		img
+			width: 90px
+			height: 90px
+			border-radius: 45px
+			display: inline-block
+			margin-right: 30px
+.prev, .next
+	position: absolute
+	top: 25%
+	background-image: url(../img/icons/arrow.png)
+	height: 80px
+	width: 40px
+	cursor: pointer
+.prev
+	left: -35px
+.next
+	right: -35px
+	transform: rotate(180deg)
+
+
+
 // Feedback Section Styles End
 
 // Allways end
