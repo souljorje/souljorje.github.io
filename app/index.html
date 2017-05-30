@@ -8,6 +8,7 @@
 	<title>Document</title>
 	<!-- build:css css/normalize.min.css-->
 	<link rel="stylesheet" href="libs/normalize-css/normalize.css">
+	<link rel="stylesheet" href="libs/cocoen/dist/css/cocoen.min.css">
 	<!-- endbuild -->
 	<!-- build:css css/vendor.min.css-->
 	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
@@ -236,67 +237,82 @@
 		<!-- Effect Section Start -->
 		<section class="effect">
 			<div class="container">
-				<div class="effect-images">
-					<img src="" alt="">
-					<img src="" alt="">
-					<img src="" alt="">
+				<h2>Работаем эффективно</h2>
+				<div class="col-md-6">
+					<div class="effect-images">
+						<div class="effect-images-item">
+							<img src="img/1-1.png" alt="">
+						</div>
+						<div class="effect-images-item">
+							<img src="img/1-2.jpg" alt="">
+						</div>
+						<div class="effect-images-item">
+							<img src="img/1-3.jpg" alt="">
+						</div>
+					</div>
 				</div>
-				<div class="effect-desc">
-					<h3>Соблюдение всех стандартов</h3>
-					<ul>
-						<li>lorem</li>
-						<li>ipsum</li>
-						<li>dolor</li>
-					</ul>
-					<h3>Наш специалист проконсультирует</h3>
-					<ul>
-						<li>lorem</li>
-						<li>ipsum</li>
-						<li>dolor</li>
-						<li>sit amet</li>
-					</ul>
-					<button class='orange'>Рассчитать стоимость</button>
-				</div>
+				<div class="col-md-6">
+					<div class="effect-content">
+						<h3>Соблюдение всех стандартов</h3>
+						<ul>
+							<li>Стяжка пола без трещин</li>
+							<li>Покрытие маркой не ниже М-150</li>
+							<li>Отклонение по горизонтали не более 20%</li>
+						</ul>
+						<h3>Наш специалист проконсультирует</h3>
+						<ul>
+							<li>Как правильно ухаживать за стяжкой пола в период ее созревания</li>
+							<li>Через какое время можно продолжать дальнейший ремонт</li>
+						</ul>
+						<button class='orange'>Рассчитать стоимость</button>
+					</div>
+				</div>	
 			</div>
 		</section>
 		<!-- Effect Section End -->
 
 		<!-- Prepare Section Start -->
 		<section class="prepare">
-			<div class="container">
-				<div class="prepare-sect-1">
+			<div class="prepare-sect-1">
+				<div class="container">
 					<h2>Наша стяжка изготавливается</h2>
 					<div class="prepare-content">
 						<!-- item 1-->
 						<div class="prepare-item">
 							<figure>
-								<span></span>
-								<figcaption></figcaption>
+								<img class='img-responsive' src="img/pictures/prepare-1.png" alt="sand">
+								<figcaption>Песок</figcaption>
 							</figure>
 						</div>
 						<!-- /item 1-->
 						<!-- item 2-->
 						<div class="prepare-item">
 							<figure>
-								<span></span>
-								<figcaption></figcaption>
+								<img class='img-responsive' src="img/pictures/prepare-2.png" alt="cement">
+								<figcaption>Цемент</figcaption>
 							</figure>
 						</div>
 						<!-- /item 2-->
 						<!-- item 3-->
 						<div class="prepare-item">
 							<figure>
-								<span></span>
-								<figcaption></figcaption>
+								<img class='img-responsive' src="img/pictures/prepare-3.png" alt="fiber">
+								<figcaption>Фибра</figcaption>
 							</figure>
 						</div>
 						<!-- /item 3-->
 					</div>
-					<p>Устройство ЦПС в пропорциях 1 к 3 с добавлением микроармируещей добавки</p>
+					<p>Устройство цементно-песчаной стяжки в пропорциях один к трем, с добавлением микроармируещей добавки</p>
 					<button class="blue">Заказать звонок</button>
 				</div>
-				<div class="prepare-sect-2">
-					<h2>Наша стяжка изготавливается</h2>
+			</div>
+			<div class="prepare-sect-2">
+				<div class="container">
+					<h2>Процесс изготовления</h2>
+					<div class="prepare-slider cocoen">
+						<img src="img/1-2.jpg" alt="qwe">
+						<img src="img/1-3.jpg" alt="qwe">
+					</div>
 				</div>
 			</div>
 		</section>
@@ -305,10 +321,10 @@
 		<!-- Feedback Section Start -->
 		<section class="feedback">
 			<div class="container">
-				<div class="slider">
-					<div class="slider-item"></div>
-					<div class="slider-item"></div>
-					<div class="slider-item"></div>
+				<div class="feedback-slider">
+					<div class="feedback-slider-item"></div>
+					<div class="feedback-slider-item"></div>
+					<div class="feedback-slider-item"></div>
 				</div>
 			</div>
 		</section>
@@ -320,8 +336,10 @@
 		</footer>
 		<!-- Footer End -->
 		<!-- build:js js/vendor.min.js -->
-		<script type="text/javascript"  src='libs/jquery/dist/jquery.min.js'></script>
-		<script type="text/javascript" src='libs/bootstrap/dist/js/bootstrap.min.js'></script>
+		<script src='libs/jquery/dist/jquery.min.js'></script>
+		<script src='libs/bootstrap/dist/js/bootstrap.min.js'></script>
+		<script src='libs/cocoen/dist/js/cocoen-jquery.min.js'></script>
+		<script src='libs/cocoen/dist/js/cocoen.min.js'></script>
 		<!-- endbuild -->
 		<!-- build:js js/main.min.js -->
 		<script type="text/javascript" src='js/common.js'></script>

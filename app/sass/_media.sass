@@ -15,8 +15,13 @@
 		p
 			font-size: 14px
 
-	.benefits-item
-		width: 45%
+	.benefits
+		&-item
+			width: 45%
+		&-footer 
+			p
+				text-align: center
+				margin-top: 10px
 
 
 /* Medium Devices, Desktops */
@@ -56,6 +61,11 @@
 	.carousel .item img
 		height: 100%
 		width: 100%
+
+	.effect
+		min-height: 770px
+		.col-md-6:nth-child(2)
+			display: none
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767.5px)
 	.call button
@@ -64,18 +74,31 @@
 		background-image: url(../img/overlay.png), url(../img/1-2.jpg)
 		background-size: cover
 		background-position: top center
+	.main-content button
+			margin-right: 90px
 	.carousel, .main-overlay
 		display: none
 	
-	.benefits-content
-		padding: 0
-	.benefits-item
-		width: 45%
-		text-align: center
-		vertical-align: top
-		figure, figcaption
-			display: block
-
+	.benefits
+		&-content
+			padding: 0
+		&-item
+			width: 45%
+			text-align: center
+			vertical-align: top
+			figure, figcaption
+				display: block
+		&-footer
+			p
+				font-size: 18px
+			button
+				margin: 0
+		
+	button.orange
+		font-size: 18px
+		padding: 20px 25px
+		&:active
+			font-size: 17px
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -110,8 +133,13 @@
 @media only screen and (max-width : 493.5px)
 	.navbar
 		text-align: center
+
 	.call
 		float: none
+
+	.main-content button
+		margin-right: 0
+
 	.work
 		min-height: 1230px
 		&-item
@@ -121,6 +149,10 @@
 	.benefits-item
 		width: 100%
 
+	.prepare-item
+		margin: 0 5px
+		figcaption
+			font-size: 20px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 355.5px)

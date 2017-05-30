@@ -1,0 +1,40 @@
+{
+  "name": "cocoen",
+  "homepage": "https://github.com/koenoe/cocoen",
+  "authors": [
+    "Koen Romers <info@koenromers.com>"
+  ],
+  "description": "Touch-enabled before/after slider.",
+  "version": "2.0.2",
+  "main": [
+    "src/scss/cocoen.scss",
+    "src/js/cocoen.js"
+  ],
+  "keywords": [
+    "before",
+    "after",
+    "slider",
+    "compare",
+    "image",
+    "cocoon"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "_release": "2.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.2",
+    "commit": "5a075c52d26f13037d3e0f9a5d1b7ee42d382818"
+  },
+  "_source": "https://github.com/koenoe/cocoen.git",
+  "_target": "^2.0.2",
+  "_originalSource": "cocoen",
+  "_direct": true
+}
