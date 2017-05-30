@@ -455,11 +455,8 @@ main {
     border-radius: 4px;
     margin: 0 40px;
     outline: none; }
-    .feedback-slider-item-content {
-      display: table; }
-    .feedback-slider-item-text {
-      display: table-cell;
-      vertical-align: top; }
+    .feedback-slider-item p {
+      margin: 0; }
     .feedback-slider-item h4 {
       font-size: 18px;
       font-family: "ProximaNovaBold", sans-serif;
@@ -473,13 +470,15 @@ main {
         margin-top: 10px; }
       .feedback-slider-item h4 span {
         font-size: 15px;
-        color: #7cb7e6; }
+        color: #7cb7e6;
+        display: block; }
     .feedback-slider-item img {
       width: 90px;
       height: 90px;
       border-radius: 45px;
-      display: inline-block;
-      margin-right: 30px; }
+      float: left;
+      margin-right: 30px;
+      margin-bottom: 15px; }
 
 .prev, .next {
   position: absolute;
@@ -487,7 +486,8 @@ main {
   background-image: url(../img/icons/arrow.png);
   height: 80px;
   width: 40px;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 2; }
 
 .prev {
   left: -35px; }
@@ -558,7 +558,7 @@ main {
   .call button {
     display: none; }
   main {
-    background-image: url(../img/overlay.png), url(../img/1-2.jpg);
+    background-image: url(../img/backgrounds/overlay.png), url(../img/1-2.jpg);
     background-size: cover;
     background-position: top center; }
   .main-content button {
@@ -621,7 +621,11 @@ main {
   .prepare-item {
     margin: 0 5px; }
     .prepare-item figcaption {
-      font-size: 20px; } }
+      font-size: 20px; }
+  .feedback-slider-item h4 {
+    display: inline-block; }
+    .feedback-slider-item h4 span {
+      display: block; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 355.5px) {

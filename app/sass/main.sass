@@ -462,11 +462,8 @@ main
 		border-radius: 4px
 		margin: 0 40px
 		outline: none
-		&-content
-			display: table
-		&-text
-			display: table-cell
-			vertical-align: top
+		p
+			margin: 0
 		h4
 			font-size: 18px
 			font-family: $bold
@@ -481,12 +478,14 @@ main
 			span
 				font-size: 15px
 				color: #7cb7e6
+				display: block
 		img
 			width: 90px
 			height: 90px
 			border-radius: 45px
-			display: inline-block
+			float: left
 			margin-right: 30px
+			margin-bottom: 15px
 .prev, .next
 	position: absolute
 	top: 25%
@@ -494,6 +493,7 @@ main
 	height: 80px
 	width: 40px
 	cursor: pointer
+	z-index: 2
 .prev
 	left: -35px
 .next
