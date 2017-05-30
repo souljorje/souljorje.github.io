@@ -414,7 +414,7 @@ main {
       margin-top: 20px;
       font-size: 25px; }
   .prepare-sect-2 {
-    background-image: url(../img/backgrounds/prepare.png);
+    background-image: url(../img/backgrounds/prepare-bg.png);
     color: #fff; }
     .prepare-sect-2 h2:after {
       content: '';
@@ -428,6 +428,12 @@ main {
   .prepare-slider {
     max-height: 370px;
     margin-top: 35px; }
+
+.feedback {
+  min-height: 500px;
+  background-image: url(../img/backgrounds/feedback-bg.png);
+  background-size: cover;
+  background-position: center top; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -503,7 +509,7 @@ main {
       display: block; }
   .benefits-footer p {
     font-size: 18px; }
-  .benefits-footer button {
+  .benefits-footer button.orange {
     margin: 0; }
   button.orange {
     font-size: 18px;
