@@ -715,8 +715,11 @@ footer {
     text-align: left; }
     .main-content button {
       margin-right: 0; }
-    .main-content ul li:nth-child(3) span:nth-child(3) {
-      margin-left: 80px; }
+    .main-content ul {
+      font-size: 20px; }
+      .main-content ul li:nth-child(3) span:nth-child(3) {
+        margin-left: 90px;
+        margin-top: 5px; }
   .work {
     min-height: 1230px; }
     .work-item {
@@ -739,8 +742,6 @@ footer {
 @media only screen and (max-width: 355.5px) {
   h1 {
     font-size: 38px; }
-  .main-content ul li:nth-child(3) span:nth-child(3) {
-    margin-left: 0px; }
   .work {
     min-height: 1580px; }
     .work-item {
