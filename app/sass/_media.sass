@@ -6,6 +6,14 @@
 	.navbar-left 
 		margin: 0 0 0 -15px
 	
+	.main-content
+		h2
+			font-size: 26px
+	h1
+		font-size: 44px
+	button.orange
+		padding: 20px 25px
+
 	.work
 		min-height: 824px
 		&-item
@@ -64,8 +72,10 @@
 
 	.effect
 		min-height: 770px
-		.col-md-6:nth-child(2)
-			display: none
+		.col-md-6
+			padding: 0
+			&:nth-child(2)
+				display: none
 
 	.prev
 		left: -5px
@@ -74,13 +84,17 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767.5px)
-	.call button
-		display: none
+	.call
+		margin-right: 5px
+		button
+			display: none
 	main
-		background-image: url(../img/overlay.png), url(../img/1-2.jpg)
+		background-image: url(../img/backgrounds/overlay.png), url(../img/1-2.jpg)
 		background-size: cover
 		background-position: top center
-	.main-content button
+	.main-content
+		margin-right: 0
+		button
 			margin-right: 90px
 	.carousel, .main-overlay
 		display: none
@@ -94,6 +108,8 @@
 			vertical-align: top
 			figure, figcaption
 				display: block
+			span
+				margin-right: 0
 		&-footer
 			p
 				font-size: 18px
@@ -102,9 +118,18 @@
 		
 	button.orange
 		font-size: 18px
-		padding: 20px 25px
 		&:active
 			font-size: 17px
+	
+	.footer
+		&-item
+			font-size: 14px
+			&.phone
+				font-size: 14px
+				line-height: 32.8px
+				small
+					font-size: 14px
+
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -134,17 +159,49 @@
 				button
 					margin: 5px 9px
 					width: 227px
+		footer
+			padding: 6% 0
+		.footer
+			&-content
+				display: block
+			&-item
+				margin: 8px 15px
+				text-align: center
+				line-height: 20px!important
+				&:after
+					display: none!important
+				&.phone
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 493.5px)
 	.navbar
-		text-align: center
+		text-align: right
+		&-brand
+			display: none
+		&-header
+			float: left
+			margin-left: 20px
+		.call
+			text-align: right
+			margin-right: 20px
+			span:before
+				left: -3px
+				top: 6px
+		&-left
+			text-align: center
 
 	.call
 		float: none
-
-	.main-content button
-		margin-right: 0
+	
+	h1
+		font-size: 40px
+	.main-content
+		text-align: left
+		button
+			margin-right: 0
+		ul li:nth-child(3) span:nth-child(3)
+			margin-left: 80px
 
 	.work
 		min-height: 1230px
@@ -163,8 +220,19 @@
 		display: inline-block
 		span
 			display: block
+
+	footer
+		padding: 10px 0
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 355.5px)
+	
+	h1
+		font-size: 38px
+
+	.main-content 
+		ul li:nth-child(3) span:nth-child(3)
+			margin-left: 0px
+	
 	.work
 		min-height: 1580px
 		&-item
