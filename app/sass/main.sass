@@ -93,6 +93,8 @@ button
 	li
 		position: relative
 		padding: 0 7px
+		&.active a
+			color: #80b9e7
 		a
 			color: #242424
 			&:hover, &:focus
@@ -232,8 +234,6 @@ main
 			margin-top: 10px
 	h3
 		text-transform: none
-	p
-		font-size: 16px
 	&-content
 		margin-top: 35px
 	&-item
@@ -241,6 +241,15 @@ main
 		width: 200px
 		vertical-align: top
 		margin: 5px 12px
+		p
+			font-size: 16px
+			opacity: 0
+			transform: translate3d(0, -50%, 0)
+			transition: 0.8s all ease
+		&.hover 
+			p
+				opacity: 1;
+				transform: none;
 		span
 			display: inline-block
 			width: 82px
@@ -558,6 +567,15 @@ footer
 				font-family: $regular
 
 
+@keyframes fadeInDown
+  0%
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  100%
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
 
 
 

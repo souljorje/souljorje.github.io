@@ -92,6 +92,8 @@ button {
 .nav li {
   position: relative;
   padding: 0 7px; }
+  .nav li.active a {
+    color: #80b9e7; }
   .nav li a {
     color: #242424; }
     .nav li a:hover, .nav li a:focus {
@@ -233,8 +235,6 @@ main {
       margin-top: 10px; }
   .work h3 {
     text-transform: none; }
-  .work p {
-    font-size: 16px; }
   .work-content {
     margin-top: 35px; }
   .work-item {
@@ -242,6 +242,17 @@ main {
     width: 200px;
     vertical-align: top;
     margin: 5px 12px; }
+    .work-item p {
+      font-size: 16px;
+      opacity: 0;
+      -webkit-transform: translate3d(0, -50%, 0);
+              transform: translate3d(0, -50%, 0);
+      -webkit-transition: 0.8s all ease;
+      transition: 0.8s all ease; }
+    .work-item.hover p {
+      opacity: 1;
+      -webkit-transform: none;
+              transform: none; }
     .work-item span {
       display: inline-block;
       width: 82px;
@@ -554,6 +565,26 @@ footer {
     .footer-item.copy small {
       font-family: "ProximanovaRegular", sans-serif; }
 
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -620,6 +651,17 @@ footer {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767.5px) {
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important; }
   .call {
     margin-right: 5px; }
     .call button {
@@ -634,6 +676,10 @@ footer {
       margin-right: 90px; }
   .carousel, .main-overlay {
     display: none; }
+  .work-item p {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; }
   .benefits-content {
     padding: 0; }
   .benefits-item {
@@ -658,18 +704,7 @@ footer {
       font-size: 14px;
       line-height: 32.8px; }
       .footer-item.phone small {
-        font-size: 14px; }
-  /*Disable Animation on Mobile Devices*/
-  .animated {
-    /*CSS transitions*/
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    /*CSS transforms*/
-    -webkit-transform: none !important;
-    transform: none !important;
-    /*CSS animations*/
-    -webkit-animation: none !important;
-    animation: none !important; } }
+        font-size: 14px; } }
 
 @media only screen and (max-width: 654.5px) {
   .work {

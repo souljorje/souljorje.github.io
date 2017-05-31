@@ -1,3 +1,4 @@
+// Before/after slider
 new Cocoen(document.querySelector('.cocoen'));
 
 $('.feedback-slider').slick({
@@ -17,3 +18,16 @@ $('.feedback-slider').slick({
       }
     }]
 });
+
+// fadeInAnimation
+$('.work-item').hover(
+       function(){ $(this).addClass('hover') 
+});
+
+// wow.js
+wow = new WOW (
+	{
+		mobile: false
+	}
+)
+wow.init();

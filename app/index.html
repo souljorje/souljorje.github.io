@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -13,12 +13,13 @@
 	<!-- build:css css/vendor.min.css-->
 	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="libs/animate.css/animate.css">
 	<!-- endbuild -->
 	<!-- build:css css/main.min.css -->
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<!-- endbuild --></head>
-	<body>
+	<body data-spy="scroll" data-target=".navbar-collapse">
 
 		<!-- Header start-->
 		<header>
@@ -61,7 +62,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="#" class="smooth-scroll" data-section="">
+									<a href="#benefits" class="smooth-scroll" data-section=".benefits">
 										Преимущества
 									</a>
 								</li>
@@ -172,13 +173,13 @@
 		<!-- Work Section End -->
 
 		<!-- Benbefits Section Start -->
-		<section class="benefits">
+		<section class="benefits" id="benefits">
 			<div class="container">
 				<h2>Почему стоит выбрать нас?</h2>
 				<p>Перед тем, как начать работу, мы осматриваем помещение, уточняем планы по дальнейшей эксплуатации и предлагаем полезные идеи по дальнейшему ремонту и уходу за стяжкой</p>
 				<div class="benefits-content">
 					<!-- item 1-->
-					<div class="benefits-item">
+					<div class="benefits-item wow fadeInLeft" data-wow-delay='1000ms'>
 						<figure>
 							<span></span>
 							<figcaption>В стоимость все включено<br/>Не меняем стоимости во время проекта</figcaption>
@@ -186,7 +187,7 @@
 					</div>
 					<!-- /item 1-->
 					<!-- item 2-->
-					<div class="benefits-item">
+					<div class="benefits-item wow fadeInRight" data-wow-delay='1000ms'>
 						<figure>
 							<span></span>
 							<figcaption>Стяжка без трещин благодаря<br/> микроармированию</figcaption>
@@ -194,7 +195,7 @@
 					</div>
 					<!-- /item 2-->
 					<!-- item 3-->
-					<div class="benefits-item">
+					<div class="benefits-item wow fadeInLeft" data-wow-delay='1000ms'>
 						<figure>
 							<span></span>
 							<figcaption>Отсутсвие рисков пролива<br/>соседей снизу</figcaption>
@@ -202,7 +203,7 @@
 					</div>
 					<!-- /item 3-->
 					<!-- item 4-->
-					<div class="benefits-item">
+					<div class="benefits-item wow fadeInRight" data-wow-delay='1000ms'>
 						<figure>
 							<span></span>
 							<figcaption>Устройство стяжки без предварительной<br/>подготовки основания</figcaption>
@@ -210,7 +211,7 @@
 					</div>
 					<!-- /item 4-->
 					<!-- item 5-->
-					<div class="benefits-item">
+					<div class="benefits-item wow fadeInLeft" data-wow-delay='1000ms'>
 						<figure>
 							<span></span>
 							<figcaption>Толщина стяжки до 10 см</figcaption>
@@ -218,7 +219,7 @@
 					</div>
 					<!-- /item 5-->
 					<!-- item 6-->
-					<div class="benefits-item">
+					<div class="benefits-item wow fadeInRight" data-wow-delay='1000ms'>
 						<figure>
 							<span></span>
 							<figcaption>Предоставляем мастера с оборудованием<br/>для приемки объекта</figcaption>
@@ -372,6 +373,7 @@
 		<script src='libs/cocoen/dist/js/cocoen-jquery.min.js'></script>
 		<script src='libs/cocoen/dist/js/cocoen.min.js'></script>
 		<script src='libs/slick-carousel/slick/slick.min.js'></script>
+		<script src='libs/wow/dist/wow.js'></script>
 		<!-- endbuild -->
 		<!-- build:js js/main.min.js -->
 		<script type="text/javascript" src='js/common.js'></script>
