@@ -71,6 +71,11 @@ button
 		display: inline-block
 		vertical-align: middle
 		position: relative
+		a
+			color: #000
+			&:hover
+				color: #80b9e7
+				text-decoration: none
 		&:before
 			content: url(../img/icons/phone.png)
 			position: absolute
@@ -87,9 +92,8 @@ button
 		&:hover
 			background-color: #51a4e8
 
-.navbar-left 
-	margin: 0 70px
 .nav
+	margin-left: 37px
 	li
 		position: relative
 		padding: 0 7px
@@ -97,8 +101,10 @@ button
 			color: #80b9e7
 		a
 			color: #242424
-			&:hover, &:focus
+			&:hover
 				color: #80b9e7
+				background-color: transparent
+			&:focus
 				background-color: transparent
 	li:not(:last-child):after
 		content: ''
@@ -215,7 +221,7 @@ main
 	background-position: center bottom
 	position: relative
 	text-align: center
-	padding-top: 35px
+	padding-top: 43px
 	box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.15)
 	h2
 		position: relative
@@ -243,13 +249,6 @@ main
 		margin: 5px 12px
 		p
 			font-size: 16px
-			opacity: 0
-			transform: translate3d(0, -50%, 0)
-			transition: 0.8s all ease
-		&.hover 
-			p
-				opacity: 1;
-				transform: none;
 		span
 			display: inline-block
 			width: 82px
@@ -282,8 +281,11 @@ main
 	background-size: cover
 	background-position: center bottom
 	margin-top: -170px
-	padding-top: 130px
+	padding-top: 140px
 	text-align: center
+	.anchor
+		position: relative
+		top: -35px
 	.container > p
 		max-width: 600px
 		margin: auto
@@ -299,6 +301,7 @@ main
 		font-family: $bold
 		margin-top: 25px
 		font-size: 16px
+		vertical-align: top
 		figure
 			display: table
 		figcaption
@@ -325,8 +328,6 @@ main
 			width: 228px
 			height: 66px
 			padding: 10px 40px
-			text-transform: none
-			line-height: 23px
 			display: inline-block
 			vertical-align: middle
 			margin: 0 70px
@@ -349,7 +350,7 @@ main
 	background-size: cover
 	background-position: center bottom
 	color: #fff
-	padding: 30px 0 70px 0
+	padding: 38px 0 70px 0
 	text-align: center
 	&-images
 		margin-top: 50px
@@ -410,8 +411,8 @@ main
 .prepare
 	text-align: center
 	&-sect-1, &-sect-2
-		padding: 60px 0
-	p
+		padding: 43px 0
+	.container > p
 		font-size: 20px
 		font-family: $bold
 		max-width: 430px
@@ -426,6 +427,29 @@ main
 		margin-top: 60px
 	&-item
 		margin: 0 15px
+		.img
+			&-wrap
+				position: relative
+			&-overlay
+				background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+				bottom: 0
+				left: 0
+				opacity: 0
+				padding: 0 20px
+				position: absolute
+				right: 0
+				text-align: center
+				top: 0
+				transition: opacity 400ms ease 0s
+				border-radius: 150px
+				display: flex
+				align-items: center
+				p
+					font-family: $regular
+					font-size: 16px
+		&:hover .img
+			&-overlay
+				opacity: 1
 		figcaption
 			margin-top: 20px
 			font-size: 25px
@@ -536,6 +560,11 @@ footer
 		&.name
 			position: relative
 			line-height: 32.8px
+			a
+				color: #fff
+				&:hover
+					color: #3a5870
+					text-decoration: none
 			&:after
 				content: ''
 				width: 1px
@@ -566,20 +595,89 @@ footer
 			small
 				font-family: $regular
 
-
-@keyframes fadeInDown
-  0%
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  100%
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-
-
-
 // Footer Section Styles End
+
+// Modal & Form Styles
+
+#count-form
+	.modal
+		&-dialog
+			max-width: 600px
+			margin: 40px auto
+		&-header
+			text-align: center
+			font-family: $bold
+			font-size: 20px
+		&-body
+			text-align: center
+			padding: 5px 65px 15px
+			.control-label
+				text-align: left
+				padding-right: 0
+				padding-left: 0	
+	.form
+		p
+			font-size: 18px
+			> span
+					font-family: $xbold
+		&-group
+			font-size: 16px
+		&-radio
+			margin-bottom: 15px
+			display: inline-flex
+			font-size: 0
+			&-item
+				width: 25%
+				display: inline-block
+				font-size: 14px
+				padding: 10px
+				vertical-align: top
+				position: relative
+				input
+					position: absolute
+					bottom: -5px
+					left: 0
+					right: 0
+					margin: auto
+
+
+#call-form
+	.modal-dialog
+		max-width: 450px
+		text-align: center
+		.modal-header
+			font-family: $bold
+			font-size: 20px
+		.control-label
+			text-align: left
+			padding-right: 0
+
+#discount-form
+	.modal-header
+		font-family: $bold
+		font-size: 20px
+		text-align: center
+	.modal-img
+		width: 170px
+		display: inline-block
+		vertical-align: top
+	form
+		display: inline-block
+		vertical-align: middle
+		width: 65%
+		text-align: center
+		margin-top: 50px
+		.form-group
+			text-align: left
+			font-size: 16px
+			margin: 
+				left: 0
+				right: 0
+			label
+				text-align: left
+				padding-right: 0
+// Modal & Form Styles End
+
 
 // Allways end
 @import "_media.sass"

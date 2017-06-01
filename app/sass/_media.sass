@@ -3,8 +3,31 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	.navbar-left 
-		margin: 0 0 0 -15px
+
+	.navbar
+		&-toggle
+			display: block
+		&-header 
+			float: none
+		&-collapse 
+			background-color: #fff
+			padding: 0 15px!important
+			margin: 15px 0 0 0
+			text-align: center
+			float: none!important
+			&.collapse 
+				display: none!important
+				&.in
+					display:block !important
+		&-nav
+			float: none!important
+			margin: 7.5px -15px
+			li 
+				float: none
+				&:not(:last-child):after
+					content: none
+				a
+					padding: 10px
 	
 	.main-content
 		h2
@@ -34,48 +57,20 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	.navbar-toggle 
-		display: block
-	
-	.navbar-header 
-		float: none
-	
-	.navbar-collapse.collapse 
-		display: none!important
-	
-	.navbar-nav 
-		float: none!important
-		margin: 7.5px -15px
-	
-	.nav > li 
-		float: none
-	.nav li:not(:last-child):after
-		content: none
-
-	.navbar-nav > li > a
-		padding: 10px
-	
-	.navbar-collapse 
-		background-color: #fff
-		padding: 0 15px!important
-		margin: 15px 0 0 0
-	
-	.navbar-left 
-		float: none!important
-	
-	.navbar-collapse.collapse.in
-		display:block !important
 	
 	.carousel .item img
 		height: 100%
 		width: 100%
-
+	
 	.effect
 		min-height: 770px
 		.col-md-6
 			padding: 0
 			&:nth-child(2)
 				display: none
+	
+	.prepare-item .img-overlay p
+		font-size: 14px
 
 	.prev
 		left: -5px
@@ -106,6 +101,12 @@
 		-o-animation: none !important
 		-ms-animation: none !important
 		animation: none !important
+	
+			
+	button.orange
+		font-size: 18px
+		&:active
+			font-size: 17px
 
 	.call
 		margin-right: 5px
@@ -121,11 +122,6 @@
 			margin-right: 90px
 	.carousel, .main-overlay
 		display: none
-	
-	.work-item
-		p
-			opacity: 1
-			transform: none
 
 	.benefits
 		&-content
@@ -143,12 +139,10 @@
 				font-size: 18px
 			button.orange
 				margin: 0
-		
-	button.orange
-		font-size: 18px
-		&:active
-			font-size: 17px
-	
+
+	.prepare-item .img-overlay
+		display: none
+
 	.footer
 		&-item
 			font-size: 14px
@@ -157,7 +151,14 @@
 				line-height: 32.8px
 				small
 					font-size: 14px
+	#call-form
+		.modal-dialog
+			margin: 50px auto
 
+	#discount-form
+		form
+			margin-top: 0
+			width: 61%;
 @media only screen and (max-width : 654.5px)
 		.work
 			min-height: 1100px
@@ -177,8 +178,14 @@
 				line-height: 20px!important
 				&:after
 					display: none!important
-
-
+		
+		#count-form
+			.modal-dialog
+				margin:
+					left: 10px
+					right: 10px
+			.modal-body
+				padding: 5px 10px 15px
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 493.5px)
 	.navbar
@@ -232,6 +239,12 @@
 
 	footer
 		padding: 10px 0
+
+	#discount-form
+		.modal-body
+			text-align: center
+		form
+			width: 100%
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 355.5px)
 	

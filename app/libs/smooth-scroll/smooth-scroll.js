@@ -27,7 +27,7 @@ var config = $.extend( {}, defaults, opts );
                 $('html, body').stop( true, true );
             };
 
-            var scrollPos = $section.offset().top;
+            var scrollPos = $section.offset().top - 80;
 
             if ( $(window).scrollTop() == scrollPos ) {
                 return false;
