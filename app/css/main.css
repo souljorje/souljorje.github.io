@@ -559,11 +559,6 @@ footer {
   .footer-item.name {
     position: relative;
     line-height: 32.8px; }
-    .footer-item.name a {
-      color: #fff; }
-      .footer-item.name a:hover {
-        color: #3a5870;
-        text-decoration: none; }
     .footer-item.name:after {
       content: '';
       width: 1px;
@@ -576,6 +571,11 @@ footer {
   .footer-item.phone {
     font-size: 22px;
     position: relative; }
+    .footer-item.phone a {
+      color: #fff; }
+      .footer-item.phone a:hover {
+        color: #7cb7e6;
+        text-decoration: none; }
     .footer-item.phone span {
       font-family: "ProximanovaRegular", sans-serif; }
     .footer-item.phone small {
