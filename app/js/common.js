@@ -74,7 +74,7 @@ $(document).ready(function() {
         var th = $(this);
         $.ajax({
             type: "POST",
-            url: '../php/count.php', //Change
+            url: 'php/count.php', //Change
             data: th.serialize()
         }).done(function() {
             alert('Спасибо!');
@@ -89,7 +89,7 @@ $(document).ready(function() {
         var th = $(this);
         $.ajax({
             type: "POST",
-            url: "../php/call.php", //Change
+            url: "php/call.php", //Change
             data: th.serialize()
         }).done(function() {
             alert('Спасибо!');
@@ -104,7 +104,7 @@ $(document).ready(function() {
         var th = $(this);
         $.ajax({
             type: "POST",
-            url: "../php/discount.php", //Change
+            url: "php/discount.php", //Change
             data: th.serialize()
         }).done(function() {
             alert('Спасибо!');
