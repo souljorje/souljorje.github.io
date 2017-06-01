@@ -1,34 +1,51 @@
 @font-face {
-    font-family: "ProximaNovaBlack";
-    src: url("../fonts/Proxima Nova Black.eot"); /* IE9 */
-    src: url("../fonts/Proxima Nova Black.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("../fonts/Proxima Nova Black.woff") format("woff"), /* chrome, firefox */
-    url("../fonts/Proxima Nova Black.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
-    url("../fonts/Proxima Nova Black.svg#Proxima Nova Bl") format("svg"); /* iOS 4.1- */
+    font-family: "Proxima Nova Bl";
+    src: url("Proxima Nova Black.eot"); /* IE9 */
+    src: url("Proxima Nova Black.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("Proxima Nova Black.woff") format("woff"), /* chrome, firefox */
+    url("Proxima Nova Black.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("Proxima Nova Black.svg#Proxima Nova Bl") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
 }
+
+
+
 @font-face {
-    font-family: "ProximaNovaBold";
-    src: url("../fonts/Proxima Nova Bold.eot"); /* IE9 */
-    src: url("../fonts/Proxima Nova Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("../fonts/Proxima Nova Bold.woff") format("woff"), /* chrome, firefox */
-    url("../fonts/Proxima Nova Bold.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
-    url("../fonts/Proxima Nova Bold.svg#Proxima Nova Rg") format("svg"); /* iOS 4.1- */
+    font-family: "Proxima Nova Rg";
+    src: url("Proxima Nova Bold.eot"); /* IE9 */
+    src: url("Proxima Nova Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("Proxima Nova Bold.woff") format("woff"), /* chrome, firefox */
+    url("Proxima Nova Bold.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("Proxima Nova Bold.svg#Proxima Nova Rg") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
 }
+
+
+
 @font-face {
-    font-family: "ProximaNovaExtrabold";
-    src: url("../fonts/Proxima Nova Extrabold.eot"); /* IE9 */
-    src: url("../fonts/Proxima Nova Extrabold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("../fonts/Proxima Nova Extrabold.woff") format("woff"), /* chrome, firefox */
-    url("../fonts/Proxima Nova Extrabold.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
-    url("../fonts/Proxima Nova Extrabold.svg#Proxima Nova Th") format("svg"); /* iOS 4.1- */
+    font-family: "Proxima Nova Th";
+    src: url("Proxima Nova Extrabold.eot"); /* IE9 */
+    src: url("Proxima Nova Extrabold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("Proxima Nova Extrabold.woff") format("woff"), /* chrome, firefox */
+    url("Proxima Nova Extrabold.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("Proxima Nova Extrabold.svg#Proxima Nova Th") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
 }
+
+
+
 @font-face {
-    font-family: "ProximaNovaRegular";
-    src: url("../fonts/Proxima Nova Regular.eot"); /* IE9 */
-    src: url("../fonts/Proxima Nova Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("../fonts/Proxima Nova Regular.woff") format("woff"), /* chrome, firefox */
-    url("../fonts/Proxima Nova Regular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
-    url("../fonts/Proxima Nova Regular.svg#Proxima Nova Rg") format("svg"); /* iOS 4.1- */
+    font-family: "Proxima Nova Rg";
+    src: url("Proxima Nova Regular.eot"); /* IE9 */
+    src: url("Proxima Nova Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("Proxima Nova Regular.woff") format("woff"), /* chrome, firefox */
+    url("Proxima Nova Regular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("Proxima Nova Regular.svg#Proxima Nova Rg") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
 }
 
 
