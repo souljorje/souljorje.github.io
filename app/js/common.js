@@ -77,7 +77,7 @@ $(document).ready(function() {
             url: 'php/count.php', //Change
             data: th.serialize()
         }).done(function() {
-            alert('Спасибо!');
+            $('#thx').modal('toggle');
             setTimeout(function() {
                 // Done Functions
                 th.trigger("reset");
@@ -92,7 +92,7 @@ $(document).ready(function() {
             url: "php/call.php", //Change
             data: th.serialize()
         }).done(function() {
-            alert('Спасибо!');
+            $('#thx').modal('toggle');
             setTimeout(function() {
                 // Done Functions
                 th.trigger("reset");
@@ -107,7 +107,7 @@ $(document).ready(function() {
             url: "php/discount.php", //Change
             data: th.serialize()
         }).done(function() {
-            alert('Спасибо!');
+            $('#thx').modal('toggle');
             setTimeout(function() {
                 // Done Functions
                 th.trigger("reset");
