@@ -1,0 +1,214 @@
+body {
+  position: relative;
+  font-family: "ProximaNovaRegular", sans-serif; }
+
+h1, h2, h3, header nav nav, button {
+  text-transform: uppercase;
+  font-family: "ProximaNovaBold", sans-serif; }
+
+h1 {
+  font-size: 48px;
+  font-family: "ProximaNovaExtrabold", sans-serif;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  text-align: left; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 25px; }
+
+button, a {
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+  outline: none !important;
+  cursor: pointer !important; }
+
+button {
+  color: #fff;
+  border-radius: 2px; }
+  button.orange {
+    background-image: linear-gradient(170deg, #f3b68d 0%, #e5620b 45%, #e5620b 100%);
+    font-size: 20px;
+    padding: 30px 40px;
+    border-bottom: 2px solid #b44a04;
+    -webkit-box-shadow: 3px 3px 10px 2px rgba(107, 43, 0, 0.65);
+            box-shadow: 3px 3px 10px 2px rgba(107, 43, 0, 0.65); }
+    button.orange:hover {
+      background-image: linear-gradient(170deg, #f3b68d 0%, #e5620b 100%); }
+    button.orange:active {
+      font-size: 19px;
+      -webkit-box-shadow: 1px 1px 10px rgba(107, 43, 0, 0.65);
+              box-shadow: 1px 1px 10px rgba(107, 43, 0, 0.65); }
+  button.blue {
+    background-color: #80b9e7;
+    border-bottom: 4px solid #5e9ed2;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    vertical-align: middle;
+    padding: 20px 5px;
+    width: 245px;
+    height: 63px;
+    font-size: 16px; }
+    button.blue:active {
+      font-size: 15px;
+      -webkit-box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(0, 0, 0, 0.2);
+              box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(0, 0, 0, 0.2); }
+
+.navbar {
+  background-color: #fff;
+  min-height: 92px;
+  padding-top: 17px;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35); }
+
+.call {
+  display: inline-block;
+  font-size: 22px;
+  float: right; }
+  .call span {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative; }
+    .call span a {
+      color: #000; }
+      .call span a:hover {
+        color: #80b9e7;
+        text-decoration: none; }
+    .call span:before {
+      content: url(../img/icons/phone.png);
+      position: absolute;
+      left: -25px;
+      top: 5px; }
+  .call small {
+    font-size: 16px; }
+  .call button {
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 10px 22px;
+    margin: 0 10px;
+    background-color: #80b9e7; }
+    .call button:hover {
+      background-color: #51a4e8; }
+
+.nav {
+  margin-left: 37px; }
+  .nav li {
+    position: relative;
+    padding: 0 7px; }
+    .nav li.active a {
+      color: #80b9e7; }
+    .nav li a {
+      color: #242424; }
+      .nav li a:hover {
+        color: #80b9e7;
+        background-color: transparent; }
+      .nav li a:focus {
+        background-color: transparent; }
+  .nav li:not(:last-child):after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: #80b9e7;
+    display: block;
+    position: absolute;
+    bottom: 24px;
+    right: -2px;
+    border-radius: 2px; }
+
+.navbar-header {
+  display: inline-block; }
+
+.navbar-toggle {
+  background-color: #80b9e7;
+  margin-top: 13px; }
+  .navbar-toggle span {
+    background-color: #fff; }
+
+.navbar-brand {
+  font-family: "ProximaNovaBold", sans-serif;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 16px;
+  float: left; }
+  .navbar-brand span {
+    color: #72b1e4; }
+  .navbar-brand small {
+    font-family: "ProximaNovaRegular", sans-serif;
+    color: #6b6b6b;
+    text-transform: none;
+    font-size: 13px;
+    letter-spacing: 1.3px; }
+
+main {
+  min-height: 607px;
+  position: relative;
+  margin-top: 92px;
+  background-color: transparent;
+  padding: 35px 0 100px 0; }
+
+.main-content {
+  color: #fff;
+  float: right;
+  margin-right: 80px;
+  text-align: center; }
+  .main-content h2 {
+    font-family: "ProximaNovaRegular", sans-serif;
+    text-align: left;
+    margin-top: 0;
+    font-size: 28px; }
+  .main-content ul {
+    list-style-type: none;
+    font-size: 22px;
+    padding: 0;
+    text-align: left;
+    margin: 20px 0; }
+    .main-content ul li {
+      margin-bottom: 15px; }
+      .main-content ul li span {
+        width: 26px;
+        height: 24px;
+        display: inline-block;
+        background-image: url(../img/icons/main.png);
+        vertical-align: middle;
+        margin-bottom: 3px;
+        margin-right: 10px; }
+      .main-content ul li:nth-child(2) span {
+        background-position: -38px 0px; }
+      .main-content ul li:last-child span {
+        background-position: -76px 0px; }
+      .main-content ul li .cost {
+        background-image: none;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        font-size: 30px;
+        font-family: "ProximaNovaBold", sans-serif;
+        border: 3px solid #e5620b;
+        border-radius: 5px;
+        padding: 0 10px;
+        margin-left: 15px; }
+  .main-content button {
+    margin-right: 35%; }
+
+.carousel {
+  z-index: -2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; }
+  .carousel-inner {
+    height: 100%; }
+  .carousel .item {
+    height: 100%; }
+
+.main-overlay {
+  background-image: url(../img/backgrounds/overlay.png);
+  background-size: cover;
+  background-position: top right;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1; }

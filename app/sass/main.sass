@@ -1,216 +1,8 @@
-// Global Styles
+
 $regular: 'ProximaNovaRegular', sans-serif
 $bold: 'ProximaNovaBold', sans-serif
 $xbold: 'ProximaNovaExtrabold', sans-serif
 $black: 'ProximaNovaBlack', sans-serif
-
-body 
-	position: relative
-	font-family: $regular
-
-h1, h2, h3, header nav nav, button
-	text-transform: uppercase
-	font-family: $bold
-
-h1
-	font-size: 48px
-	font-family: $xbold
-	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3)
-	text-align: left
-
-h2
-	font-size: 30px
-
-h3
-	font-size: 25px
-
-button, a
-	transition: 0.2s all ease
-	outline: none!important
-
-button
-	color: #fff
-	border-radius: 2px
-	&.orange
-		background-image: linear-gradient(170deg, rgba(243,182,141,1) 0%, rgba(229,98,11,1) 45%, rgba(229,98,11,1) 100%)
-		font-size: 20px
-		padding: 30px 40px
-		border-bottom: 2px solid #b44a04
-		box-shadow: 3px 3px 10px 2px rgba(107, 43, 0, 0.65)
-		&:hover
-			background-image: linear-gradient(170deg, rgba(243,182,141,1) 0%,  rgba(229,98,11,1) 100%)
-		&:active
-			font-size: 19px
-			box-shadow: 1px 1px 10px  rgba(107, 43, 0, 0.65)
-	&.blue
-		background-color: #80b9e7
-		border-bottom: 4px solid #5e9ed2
-		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2)
-		font-size: 16px
-		vertical-align: middle
-		padding: 20px 5px
-		width: 245px
-		height: 63px
-		font-size: 16px
-		&:active
-		  font-size: 15px
-		  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(0, 0, 0, 0.2)
-
-// Global Styles End
-// Header Styles
-.navbar
-	background-color: #fff
-	min-height: 92px
-	padding-top: 17px
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35)
-.call
-	display: inline-block
-	font-size: 22px
-	float: right
-	span
-		display: inline-block
-		vertical-align: middle
-		position: relative
-		a
-			color: #000
-			&:hover
-				color: #80b9e7
-				text-decoration: none
-		&:before
-			content: url(../img/icons/phone.png)
-			position: absolute
-			left: -25px
-			top: 5px
-	small
-		font-size: 16px
-	button
-		font-size: 13px
-		vertical-align: middle
-		padding: 10px 22px
-		margin: 0 10px
-		background-color: #80b9e7
-		&:hover
-			background-color: #51a4e8
-
-.nav
-	margin-left: 37px
-	li
-		position: relative
-		padding: 0 7px
-		&.active a
-			color: #80b9e7
-		a
-			color: #242424
-			&:hover
-				color: #80b9e7
-				background-color: transparent
-			&:focus
-				background-color: transparent
-	li:not(:last-child):after
-		content: ''
-		width: 4px
-		height: 4px
-		background-color: #80b9e7
-		display: block
-		position: absolute
-		bottom: 24px
-		right: -2px
-		border-radius: 2px
-.navbar-header 
-	display: inline-block
-.navbar-toggle 
-	background-color: #80b9e7
-	margin-top: 13px
-	span
-		background-color: #fff
-.navbar-brand
-	font-family: $bold
-	text-transform: uppercase
-	font-size: 21px
-	line-height: 16px
-	float: left
-	span
-		color: #72b1e4
-	small
-		font-family: $regular
-		color: #6b6b6b
-		text-transform: none
-		font-size: 13px
-		letter-spacing: 1.3px
-
-// Header Styles End
-
-// Main Section Styles
-main
-	min-height: 607px
-	position: relative
-	margin-top: 92px
-	background-color: transparent
-	padding: 35px 0 100px 0
-.main-content
-	color: #fff
-	float: right
-	margin-right: 80px
-	text-align: center
-	h2
-		font-family: $regular
-		text-align: left
-		margin-top: 0
-		font-size: 28px
-	ul 
-		list-style-type: none
-		font-size: 22px
-		padding: 0
-		text-align: left
-		margin: 20px 0
-		li
-			margin-bottom: 15px
-			span
-				width: 26px
-				height: 24px
-				display: inline-block
-				background-image: url(../img/icons/main.png)
-				vertical-align: middle
-				margin-bottom: 3px
-				margin-right: 10px
-			&:nth-child(2) span
-				background-position: -38px 0px
-			&:last-child span
-				background-position: -76px 0px
-			.cost
-				background-image: none
-				display: inline-block
-				width: auto
-				height: auto
-				font-size: 30px
-				font-family: $bold
-				border: 3px solid #e5620b
-				border-radius: 5px
-				padding: 0 10px
-				margin-left: 15px
-	button
-		margin-right: 35%
-.carousel
-	z-index: -2
-	position: absolute
-	width: 100%	
-	height: 100%
-	top: 0
-	&-inner
-		height: 100%
-	.item
-		height: 100%
-
-.main-overlay
-	background-image: url(../img/backgrounds/overlay.png)
-	background-size: cover
-	background-position: top right
-	height: 100%
-	width: 100%
-	position: absolute
-	top: 0
-	z-index: -1
-// Main Section Styles End
 
 // Work Section Styles
 .work
@@ -360,10 +152,11 @@ main
 		&-item
 			display: inline-block
 			background-size: cover
+			overflow: hidden
 			img
 				display: block
 				width: 100%
-				height: 100%
+				height: 103%
 			&:nth-child(1)
 				height: 250px
 				width: 59%
@@ -557,9 +350,9 @@ footer
 		color: #fff
 		display: inline-block
 		text-align: left
+		line-height: 32.8px
 		&.name
 			position: relative
-			line-height: 32.8px
 			&:after
 				content: ''
 				width: 1px
@@ -591,7 +384,6 @@ footer
 				right: -28px
 				top: -12px
 		&.copy
-			line-height: 32.8px
 			small
 				font-family: $regular
 

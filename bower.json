@@ -1,0 +1,15 @@
+{
+  "name": "project_name",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "normalize-css": "^7.0.0",
+    "cocoen": "^2.0.2",
+    "slick-carousel": "^1.6.0",
+    "wow": "wowjs#^1.1.2",
+    "animate.css": "^3.5.2",
+    "jquery.maskedinput": "^1.4.1",
+    "fancybox": "^3.0.47"
+  }
+}
